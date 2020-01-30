@@ -3,7 +3,6 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import {Container,Row,Col} from 'react-bootstrap';
-import { Graph } from '@vx/network';
 import Bullets from './Bullets';
 import Sidebar from './Sidebar';
 
@@ -24,10 +23,7 @@ const nodes = [
     { source: nodes[2], target: nodes[0] }
   ];
   
-  const graph = {
-    nodes,
-    links
-  };
+ 
   
 
 //===================================================================================================//
@@ -114,7 +110,7 @@ export class App extends React.Component<{}, IState>{
 
         return (
         <div className="wrapper">
-            <style type="text/css">
+            {/* <style type="text/css">
                 {`
                 .container-fluid {
                     padding-right: 15px;
@@ -126,8 +122,7 @@ export class App extends React.Component<{}, IState>{
                     border-bottom: 1px solid rgba(0,0,0,.1);
 
                 }
-                .navbar {
-                    display: inline-flex;
+                .navbar-brand {
                     justify-content: normal;
                     flex-direction: column;
                     height: 100%
@@ -141,7 +136,7 @@ export class App extends React.Component<{}, IState>{
                     background-position: 50%;
                 }
                 `}
-            </style>
+            </style> */}
 
         
             
@@ -163,6 +158,12 @@ export class App extends React.Component<{}, IState>{
         </svg> */}
         
                 <Bullets width={1200} height={1200} margin={{
+          top: 30,
+          left: 30,
+          right: 30,
+          bottom: 30
+        }} />
+        <Bullets width={1200} height={1200} margin={{
           top: 30,
           left: 30,
           right: 30,

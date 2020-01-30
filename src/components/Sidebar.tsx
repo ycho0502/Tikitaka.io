@@ -1,20 +1,38 @@
 import * as React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
+
   
 export default class Sidebar extends React.Component<any, any>{
     public render(): JSX.Element{
         return(
-            <Navbar bg="dark" variant="dark" expand={false}>
-                <div className = "logo">
-                    <Navbar.Brand href="#home">Tikkitaka</Navbar.Brand>
-                </div> 
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Network</Nav.Link>
-                    <Nav.Link href="#pricing">Health</Nav.Link>
-                </Nav>
+            
+            <div>
+           
+
+            <style type="text/css">
+                {`
+                .navbar-dark .navbar-brand {
+                    color: #0affc3;
+                }
+               
+            `}
+            </style>
+
+
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+                <Navbar.Brand href="#home">TIKITAKA</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="">HOME</Nav.Link>
+                        <Nav.Link href="">NETWORK</Nav.Link>
+                        <Nav.Link href="">More deets</Nav.Link>
+                        <Nav.Link eventKey={2} href="">Dank memes</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Navbar>
+            </div>
         )
     }
 }
