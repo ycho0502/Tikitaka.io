@@ -1,12 +1,12 @@
 import * as React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import {Container,Row,Col} from 'react-bootstrap';
 import { Graph } from '@vx/network';
 import Bullets from './Bullets';
+import Sidebar from './Sidebar';
+
 interface Sup {
     width: number;
     height: number;
@@ -146,16 +146,7 @@ export class App extends React.Component<{}, IState>{
         
             
             {/* APP NAVBAR */}
-            <Navbar bg="dark" variant="dark" expand={false}>
-                <div className = "logo">
-                    <Navbar.Brand href="#home">Tikkitaka</Navbar.Brand>
-                </div> 
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Network</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                </Nav>
-            </Navbar>
+            <Sidebar />
 
             {/* APP HEADER */}
             <div id="main-display">

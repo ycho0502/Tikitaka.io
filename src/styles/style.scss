@@ -1,19 +1,7 @@
-// $background-grey: rgba(65, 0, 206, 0.57);
-// $button-ghostwhite: green;
-
 html, body {
     height: 100%;
 }
 
-// button {
-//     height: 2.5rem;
-//     border: none;
-//     font-size: 1.3rem;
-//     border-bottom: 4px solid #ccc;
-//     margin-left: 0.5rem;
-//     cursor: pointer;
-//     color: $button-ghostwhite
-// }
 .root {
     display: flex;
     height: 100%;
@@ -30,6 +18,17 @@ html, body {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+// button {
+//     height: 2.5rem;
+//     border: none;
+//     font-size: 1.3rem;
+//     border-bottom: 4px solid #ccc;
+//     margin-left: 0.5rem;
+//     cursor: pointer;
+//     color: $button-ghostwhite
+// }
+
 
 // .is-completed {
 //     text-decoration: line-through;
