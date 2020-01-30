@@ -162,7 +162,7 @@ export class App extends React.Component<{}, IState>{
                     <Graph graph={graph} />
         </svg> */}
         
-                <Bullets width={800} height={800} margin={{
+                <Bullets width={1200} height={1200} margin={{
           top: 30,
           left: 30,
           right: 30,

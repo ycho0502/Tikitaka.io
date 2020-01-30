@@ -12,7 +12,7 @@ export default class Sidebar extends React.Component<any, any>{
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#features">Network</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    <Nav.Link href="#pricing">Health</Nav.Link>
                 </Nav>
             </Navbar>
         )

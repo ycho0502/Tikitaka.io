@@ -19,7 +19,6 @@ import {
     LinkVerticalLine,
     LinkRadialLine
   } from '@vx/shape';
-//   (data: Datum, children?: (d: Datum) => (Datum[] | null | undefined)): HierarchyNode<Datum
   
 
 
